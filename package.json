@@ -1,0 +1,34 @@
+{
+  "name": "html-to-pdf-package",
+  "version": "1.0.0",
+  "description": "A simple npm package to convert HTML content to PDF files using Puppeteer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "prepublishOnly": "npm test && npm run lint"
+  },
+  "keywords": [
+    "html",
+    "pdf",
+    "converter",
+    "puppeteer",
+    "npm-package"
+  ],
+  "author": "Your Name <your-email@example.com>",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^23.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/html-to-pdf-package.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/html-to-pdf-package/issues"
+  },
+  "homepage": "https://github.com/yourusername/html-to-pdf-package#readme"
+}
