@@ -1,18 +1,21 @@
-#HTML to PDF Package
+# HTML to PDF Package
 A simple npm package to convert HTML content into PDF files using Puppeteer.
 
-##Features
+## Features
 
 - Converts HTML content to PDF files.
 - Supports HTML strings and HTML files.
 - Easy-to-use API.
 
-##Installation
+## Installation
 To install the package, use npm:
+```javascript
 npm install html-to-pdf-package
+```
 
-##Usage
-###Convert HTML String to PDF
+## Usage
+### Convert HTML String to PDF
+```javascript
 const { htmlToPdf } = require('html-to-pdf-package');
 const htmlContent = '<h1>Hello, World!</h1><p>This is a sample PDF generated from HTML.</p>';
 htmlToPdf(htmlContent, 'output.pdf')
@@ -22,8 +25,11 @@ console.log('PDF generated successfully!');
 .catch(error => {
 console.error('Error generating PDF:', error);
 });
+```
 
-###Convert HTML File to PDF
+### Convert HTML File to PDF
+
+```javascript
 const { convertHtmlFileToPdf } = require('html-to-pdf-package');
 convertHtmlFileToPdf('sample.html', 'output-file.pdf')
 .then(() => {
@@ -32,9 +38,9 @@ console.log('PDF generated from HTML file successfully!');
 .catch(error => {
 console.error('Error generating PDF from file:', error);
 });
-
-##API
-###htmlToPdf(htmlContent, outputPath)
+```
+## API
+### htmlToPdf(htmlContent, outputPath)
 
 - Parameters:
   - htmlContent (string): The HTML content to convert to PDF.
@@ -45,7 +51,8 @@ console.error('Error generating PDF from file:', error);
   - htmlFilePath (string): The path to the HTML file to convert to PDF.
   - outputPath (string): The path where the generated PDF will be saved.
 - Returns: A promise that resolves when the PDF has been successfully generated.
-  ##Contributing
+
+## Contributing
   We welcome contributions to improve this package. To contribute:
 
 1. Fork the repository.
@@ -56,7 +63,7 @@ console.error('Error generating PDF from file:', error);
 
 ## Contact
 
-If you have any questions or need support, please contact Yash Kainth.
+If you have any questions or need support, please contact [Yash Kainth](yashkainth.10@gmail.com).
 
 ## Acknowledgements
 
